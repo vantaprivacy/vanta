@@ -1,0 +1,85 @@
+{
+  "name": "@vanta-protocol/core",
+  "version": "0.5.0-beta.1",
+  "description": "Private intent execution layer for Solana — encrypted intents, MEV protection, ZK proofs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./sdk": {
+      "import": "./dist/sdk/index.mjs",
+      "require": "./dist/sdk/index.js",
+      "types": "./dist/sdk/index.d.ts"
+    },
+    "./mev": {
+      "import": "./dist/mev/shield.mjs",
+      "require": "./dist/mev/shield.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/ --ext .ts",
+    "lint:fix": "eslint src/ tests/ --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "bench": "tsx benches/intent-throughput.ts",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "solana",
+    "privacy",
+    "mev",
+    "intent",
+    "zk-proofs",
+    "defi",
+    "encryption",
+    "jito"
+  ],
+  "author": "VANTA Protocol Contributors",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vantaagent/vanta.git"
+  },
+  "homepage": "https://usevanta.xyz",
+  "bugs": {
+    "url": "https://github.com/vantaagent/vanta/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@solana/spl-token": "^0.4.6",
+    "bs58": "^6.0.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "prettier": "^3.3.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.0"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": ">=1.90.0"
+  }
+}
