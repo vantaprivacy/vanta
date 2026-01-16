@@ -35,3 +35,4 @@ export function featureStatus(): Record<string, string> {
     Object.entries(FEATURES).map(([k, v]) => [k, v ? "enabled" : "disabled"])
   );
 }
+// requireFeature() added for flag-gated modules
