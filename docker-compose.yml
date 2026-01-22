@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  vanta:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - VANTA_LOG_LEVEL=info
+      - VANTA_NETWORK=devnet
+      - VANTA_RPC_URL=https://api.devnet.solana.com
+      - VANTA_RELAY_URLS=https://relay-1.usevanta.xyz,https://relay-2.usevanta.xyz
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:8080/health', r => process.exit(r.statusCode === 200 ? 0 : 1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  relay:
+    build: .
+    command: ["node", "dist/core/relay.js", "--mode=relay"]
+    ports:
+      - "8081:8081"
+    environment:
+      - VANTA_LOG_LEVEL=debug
+      - RELAY_PORT=8081
+      - RELAY_REGION=us-east
+    restart: unless-stopped
