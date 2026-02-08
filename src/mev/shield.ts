@@ -101,3 +101,4 @@ export class MEVShield {
     return { ...this.stats };
   }
 }
+// fix: default to low risk when pair not in database
