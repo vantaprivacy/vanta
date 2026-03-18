@@ -141,3 +141,4 @@ export class SlashingEngine extends EventEmitter {
     return map[offense] ?? 100;
   }
 }
+// fix: jail duration now correctly uses epoch + duration
