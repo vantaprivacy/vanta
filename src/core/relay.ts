@@ -102,3 +102,4 @@ export class RelayNetwork {
     return "unknown";
   }
 }
+// refactor: catch network errors in health probe
