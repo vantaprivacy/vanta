@@ -24,3 +24,4 @@ export function getVersion(): string {
 }
 
 logger.info(`VANTA Protocol v${getVersion()} loaded`);
+// v0.3.0 release tag
