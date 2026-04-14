@@ -102,3 +102,4 @@ export class MEVShield {
   }
 }
 // fix: default to low risk when pair not in database
+// refactor: configurable tip
