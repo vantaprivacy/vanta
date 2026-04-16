@@ -1,0 +1,21 @@
+name: Security Audit
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Every Monday at 06:00 UTC
+  push:
+    paths:
+      - "package-lock.json"
+      - "package.json"
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm audit --audit-level=high
+        continue-on-error: true
+      - run: npx lockfile-lint --path package-lock.json --type npm --allowed-hosts npm
