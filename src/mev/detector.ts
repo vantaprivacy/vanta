@@ -88,3 +88,4 @@ export class MEVDetector {
     return pools.every((p) => p === pools[0]);
   }
 }
+// expanded: historical slot scanning
