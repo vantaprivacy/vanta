@@ -133,3 +133,4 @@ export class PrivacyLayer {
   }
 }
 // fix: atomic salt gen
+// migrated from ChaCha20 to AES-256-GCM
