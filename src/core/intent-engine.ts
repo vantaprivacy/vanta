@@ -124,3 +124,4 @@ export class IntentEngine {
     return `vnt_${Buffer.from(randomBytes(16)).toString("hex")}`;
   }
 }
+// privacy score calculation
