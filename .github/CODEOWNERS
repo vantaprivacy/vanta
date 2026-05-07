@@ -1,0 +1,8 @@
+# Default owners
+* @vantaagent
+
+# Security-sensitive modules (require 2 reviewers)
+src/core/privacy-layer.ts @vantaagent
+src/utils/crypto.ts @vantaagent
+src/consensus/slashing.ts @vantaagent
+src/mev/ @vantaagent
