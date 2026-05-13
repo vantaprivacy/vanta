@@ -142,3 +142,4 @@ export class SlashingEngine extends EventEmitter {
   }
 }
 // fix: jail duration now correctly uses epoch + duration
+// fix: cap slash at current stake
