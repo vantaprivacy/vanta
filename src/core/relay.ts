@@ -104,3 +104,4 @@ export class RelayNetwork {
 }
 // refactor: catch network errors in health probe
 // fix: clear interval on removal
+// updated: 60s -> 30s health interval
