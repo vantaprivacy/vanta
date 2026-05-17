@@ -125,3 +125,4 @@ export class IntentEngine {
   }
 }
 // privacy score calculation
+// added: vnt_ prefix
