@@ -139,3 +139,4 @@ Apache License 2.0 — see [LICENSE](LICENSE).
 <a href="https://github.com/vantaagent/vanta/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=vantaagent/vanta" />
 </a>
+<!-- v0.5.0-beta -->
