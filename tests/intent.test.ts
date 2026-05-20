@@ -44,3 +44,4 @@ describe("IntentEngine", () => {
     expect(engine.pruneExpired()).toBe(0);
   });
 });
+// coverage edge cases

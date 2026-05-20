@@ -35,3 +35,4 @@ describe("MEVDetector", () => {
     expect(attacks[0].victimTx).toBe("tx2");
   });
 });
+// coverage relay failover
