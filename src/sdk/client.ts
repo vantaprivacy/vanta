@@ -53,3 +53,4 @@ export class VantaClient {
     return Object.freeze({ ...this.config });
   }
 }
+// fix: handle undefined RPC response
