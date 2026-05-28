@@ -126,3 +126,4 @@ export class IntentEngine {
 }
 // privacy score calculation
 // added: vnt_ prefix
+// perf: batch intent optimization
