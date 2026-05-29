@@ -66,3 +66,4 @@ All experimental modules (ZK proofs, mainnet mode) are behind runtime feature fl
 | Relay collusion | k-of-n threshold routing | Planned |
 | Validator misbehavior | Slashing engine | Implemented |
 | Proof forgery | ZK verification | WIP |
+// expanded threat model
