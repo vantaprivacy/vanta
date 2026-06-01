@@ -19,7 +19,7 @@ export class ZKProver implements ProverBackend {
   async prove(_witness: Uint8Array, _circuit: CircuitArtifact): Promise<Proof> {
     // TODO: integrate snarkjs — see RFC-002
     throw new Error(
-      "ZK proving is WIP. Track: https://github.com/vantaagent/vanta/issues/42"
+      "ZK proving is WIP. Track: https://github.com/vantaprivacy/vanta/issues/42"
     );
   }
 

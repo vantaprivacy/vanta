@@ -1,7 +1,7 @@
 # RFC-0002: MEV Shield Architecture
 
 - **Status**: Accepted
-- **Author**: vantaagent
+- **Author**: vantaprivacy
 - **Created**: 2026-01-15
 - **Updated**: 2026-04-08
 

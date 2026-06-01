@@ -4,12 +4,12 @@
 
 **Private Intent Execution Layer for Solana**
 
-[![CI](https://github.com/vantaagent/vanta/actions/workflows/ci.yml/badge.svg)](https://github.com/vantaagent/vanta/actions/workflows/ci.yml)
+[![CI](https://github.com/vantaprivacy/vanta/actions/workflows/ci.yml/badge.svg)](https://github.com/vantaprivacy/vanta/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/@vanta-protocol/core.svg)](https://www.npmjs.com/package/@vanta-protocol/core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
 
-[Website](https://usevanta.xyz) | [Docs](https://docs.usevanta.xyz) | [Blog](https://blog.usevanta.xyz) | [Twitter](https://x.com/vantaagent_)
+[Website](https://usevanta.xyz) | [Docs](https://docs.usevanta.xyz) | [Blog](https://blog.usevanta.xyz) | [Twitter](https://x.com/vantaprivacy_)
 
 </div>
 
@@ -85,7 +85,7 @@ console.log(result.intent.id);                // vnt_a1b2c3...
 ## Development
 
 ```bash
-git clone https://github.com/vantaagent/vanta.git
+git clone https://github.com/vantaprivacy/vanta.git
 cd vanta
 npm install
 npm test
@@ -136,7 +136,7 @@ Apache License 2.0 — see [LICENSE](LICENSE).
 
 ## Contributors
 
-<a href="https://github.com/vantaagent/vanta/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vantaagent/vanta" />
+<a href="https://github.com/vantaprivacy/vanta/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vantaprivacy/vanta" />
 </a>
 <!-- v0.5.0-beta -->

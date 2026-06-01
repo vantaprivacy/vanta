@@ -1,7 +1,7 @@
 # RFC-0001: Intent Encryption Scheme
 
 - **Status**: Accepted
-- **Author**: vantaagent
+- **Author**: vantaprivacy
 - **Created**: 2025-12-28
 - **Updated**: 2026-02-10
 

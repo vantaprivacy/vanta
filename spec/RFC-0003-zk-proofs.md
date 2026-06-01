@@ -1,7 +1,7 @@
 # RFC-0003: ZK Proof Integration
 
 - **Status**: Draft
-- **Author**: vantaagent
+- **Author**: vantaprivacy
 - **Created**: 2026-03-10
 - **Updated**: 2026-05-20
 

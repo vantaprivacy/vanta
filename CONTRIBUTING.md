@@ -6,7 +6,7 @@ Thank you for considering contributing to VANTA Protocol.
 
 ```bash
 # Clone
-git clone https://github.com/vantaagent/vanta.git
+git clone https://github.com/vantaprivacy/vanta.git
 cd vanta
 
 # Install dependencies
